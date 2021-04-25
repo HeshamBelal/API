@@ -11,7 +11,7 @@ public class SecondGetRequestWithPathParameters extends TestBase{
         Response response= RestAssured.given()
                 .pathParam("id",98)
                 .when()
-                .get(RestAssured.baseURI+RestAssured.port+RestAssured.basePath+"/"+"/{id}");
+                .get(RestAssured.baseURI+RestAssured.port+RestAssured.basePath+"/{id}");
         response.prettyPrint();
     }
 }
